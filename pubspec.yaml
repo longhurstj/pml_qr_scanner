@@ -1,0 +1,52 @@
+name: pml_qr_scanner
+description: QR code scanner for pml engineering mode
+publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+
+environment:
+  sdk: ">=2.17.0 <3.0.0"
+
+dependencies:
+  authentication: ^0.0.1
+  cloud_firestore: ^3.1.5  
+  firebase_auth: ^3.6.4
+  firebase_core: ^1.20.1
+  flutter:
+    sdk: flutter
+  image_picker: ^0.8.5+3
+  mobile_scanner:
+    path: ../
+  tcp_socket_connection: ^0.3.0
+  web_socket_channel: ^2.2.0
+
+dev_dependencies:
+  flutter_launcher_icons: "^0.10.0"
+  flutter_test:
+    sdk: flutter
+  lint: ^1.10.0
+
+flutter_launcher_name:
+  name: "PML QR Scanner"
+
+flutter_icons:
+  image_path: "images/PML Roundel-GREY-LARGE.png"
+  android: true 
+  ios: true
+
+flutter:
+  uses-material-design: true
+
+  assets:
+   - images/PrestigeMedicalLogo-WHITE.png
+   - images/PML Roundel-GREY.png
+   - images/PML Roundel-GREY-LARGE.png
+   - images/Prestige Part of Tuttnauer - White Hi Res.png
+   - images/0.1.1 Advance Pro dental room banner WHITE.png
+   - images/Prestige Part of Tuttnauer - Colour Hi Res.png
+
+  fonts:
+  - family: Montserrat
+    fonts:
+    - asset: fonts/Montserrat/static/Montserrat-Regular.ttf
+    - asset: fonts/Montserrat/static/Montserrat-Bold.ttf
+    - asset: fonts/Montserrat/static/Montserrat-Italic.ttf
+      style: italic
